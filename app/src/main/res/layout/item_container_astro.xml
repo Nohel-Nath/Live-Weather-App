@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/sonic_silver"
+    app:strokeWidth="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/sunriseImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/sunrise"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sunriseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Sunrise"
+            android:textColor="@color/sonic_silver"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/sunriseImage"
+            app:layout_constraintStart_toStartOf="@id/sunriseImage"
+            app:layout_constraintTop_toBottomOf="@id/sunriseImage" />
+
+        <TextView
+            android:id="@+id/sunriseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="08:00 AM"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/sunriseImage"
+            app:layout_constraintStart_toStartOf="@id/sunriseImage"
+            app:layout_constraintTop_toBottomOf="@id/sunriseTextView" />
+
+        <ImageView
+            android:id="@+id/sunsetImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/sunset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sunsetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Sunset"
+            android:textColor="@color/sonic_silver"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/sunsetImage"
+            app:layout_constraintStart_toStartOf="@id/sunsetImage"
+            app:layout_constraintTop_toBottomOf="@id/sunsetImage" />
+
+        <TextView
+            android:id="@+id/sunsetTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="05:00 PM"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/sunsetImage"
+            app:layout_constraintStart_toStartOf="@id/sunsetImage"
+            app:layout_constraintTop_toBottomOf="@id/sunsetTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
